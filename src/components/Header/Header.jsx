@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { 
   FaHome, FaInfoCircle, 
   FaStar, FaEnvelope,
-  FaUser, FaMoon, FaSun
+  FaMoon, FaSun
 } from 'react-icons/fa';
 import { GiGalaxy } from 'react-icons/gi';
-import { motion, AnimatePresence } from 'framer-motion';
-import User from './user.jsx';
+import { motion } from 'framer-motion';
 import './header.css';
 
 const MotionDiv = motion.div;
@@ -14,8 +13,6 @@ const MotionDiv = motion.div;
 const Header = ({ darkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
-  const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
-  const [hasNotifications, setHasNotifications] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -30,26 +27,8 @@ const Header = ({ darkMode }) => {
     { icon: <FaEnvelope />, text: 'Contact', href: '#contact', delay: 0.8 }
   ];
 
-  const toggleUserDropdown = () => {
-    setIsUserDropdownOpen(prev => !prev);
-    if (hasNotifications) setHasNotifications(false);
-  };
-
   return (
-    <>
-      <AnimatePresence>
-        {isUserDropdownOpen && (
-          <MotionDiv
-            className="blur-overlay"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setIsUserDropdownOpen(false)}
-          />
-        )}
-      </AnimatePresence>
-
-      <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${darkMode ? 'dark' : ''}`}>
+    <header className={`site-header ${isScrolled ? 'scrolled' : ''} ${darkMode ? 'dark' : ''}`}>
         {/* Cosmic Background Elements */}
         <div className="cosmic-elements">
           {[...Array(12)].map((_, i) => (
@@ -83,7 +62,6 @@ const Header = ({ darkMode }) => {
           >
             <MotionDiv
               className="logo-icon-container"
-              animate={{ rotate: isUserDropdownOpen ? 360 : 0 }}
               transition={{ duration: 0.5 }}
             >
               <GiGalaxy className="logo-icon" />
@@ -125,40 +103,9 @@ const Header = ({ darkMode }) => {
                 )}
               </motion.a>
             ))}
-            
-            <div className="header-actions">
-              <div className="user-container">
-                <motion.button 
-                  className={`action-btn user-btn ${isUserDropdownOpen ? 'active' : ''}`}
-                  onClick={toggleUserDropdown}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label="User menu"
-                >
-                  <FaUser className="user-icon" />
-                  {hasNotifications && (
-                    <motion.span 
-                      className="notification-badge"
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: 'spring' }}
-                    />
-                  )}
-                </motion.button>
-                
-                <AnimatePresence>
-                  {isUserDropdownOpen && (
-                    <User onClose={() => setIsUserDropdownOpen(false)} darkMode={darkMode} />
-                  )}
-                </AnimatePresence>
-
-                
-              </div>
-            </div>
           </div>
         </nav>
       </header>
-    </>
   );
 };
 

@@ -14,7 +14,7 @@ const Specials = () => {
     {
       title: "HealthCare AI Assistant",
       description: "This project is an AI-powered tool that analyzes basic health data and provides quick, helpful insights. It makes complex information easier to understand for everyday users. The system responds fast and delivers clean, accurate results.",
-      price: "$12 000",
+      price: "",
       duration: "3 months",
       type: "AI",
       image: special_1,
@@ -22,7 +22,7 @@ const Specials = () => {
     {
       title: "Real Estate Project",
       description: "This real estate platform helps users explore properties with ease. It organizes listings clearly and provides fast access to important details and making navigation smooth. The interface is designed beautiful, responsive and user-friendly.",
-      price: "$7 000",
+      price: "",
       duration: "2 months",
       type: "RealEstate",
       image: special_2
@@ -30,7 +30,7 @@ const Specials = () => {
     {
       title: "WareHouse Management",
       description: "This warehouse management system is designed to streamline inventory tracking and organization. It allows users to easily add, update, and track items, making it easier to manage selling and purchasing products, and optimize operations.",
-      price: "$9 000",
+      price: "",
       duration: "2 months",
       type: "Warehouse",
       image: special_3,

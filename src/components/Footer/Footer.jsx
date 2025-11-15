@@ -66,7 +66,7 @@ const Footer = () => {
     { text: 'Home', href: '#', icon: <FaArrowRight /> },
     { text: 'About', href: '#about', icon: <IoIosInformationCircleOutline /> },
     { text: 'Future Dreams', href: '#vision', icon: <FaRegCalendarAlt /> },
-    { text: 'Self-developed', href: '#selfdev', icon: <FaInstagram /> },
+    { text: 'Developed Projects', href: '#selfdev', icon: <FaInstagram /> },
     { text: 'Contact', href: '#contact', icon: <FaPhone /> },
   ];
 
@@ -83,10 +83,10 @@ const Footer = () => {
     { icon: <FaEnvelope />, text: 'ahmedforneas99v@gmail.com' }
   ];
 
-  const hours = [
-    { days: 'Monday - Friday', time: '8+ hours' },
-    { days: 'Saturday', time: '9am - 1pm' },
-    { days: 'Sunday', time: 'free time' }
+  const educations = [
+    { content: 'Bachelor of Computer Science' },
+    { content:'Federal University of Pampa' },
+    { content: '03/2020 ~ 12/2023' }
   ];
 
   const legalLinks = [
@@ -106,7 +106,7 @@ const Footer = () => {
               <span className="logo-text">Work Together</span>
             </div>
             <p className="footer-tagline">
-            I deeply value every opportunity given to me, especially when someone chooses to place their trust in my abilities. I understand that trust is earned through consistent effort, transparency, and reliable results, not just promises. That’s why I approach every task with responsibility and genuine dedication, ensuring that my work reflects both my skills and my respect for the people who rely on me. When I take on a project, I commit fully—delivering carefully executed, dependable work that contributes meaningfully to the team’s goals.
+            I deeply value every opportunity given to me, especially when someone chooses to place their trust in my abilities. I understand that trust is earned through consistent effort, transparency, and right results, not just promises. That’s why I approach every task with responsibility and genuine dedication, ensuring that my work reflects both my skills and my respect for the people who rely on me. When I take on a project, I commit fully—delivering carefully executed, dependable work that contributes meaningfully to the team’s goals.
             
             </p>
             <div className="footer-social">
@@ -167,12 +167,12 @@ const Footer = () => {
             </div>
             
             <div className="footer-column">
-              <h4 className="footer-heading">Working Hours</h4>
+              <h4 className="footer-heading">Education</h4>
               <ul className="hours-list">
-                {hours.map((hour, index) => (
+                {educations.map((edu, index) => (
                   <li key={index} className="hours-item">
-                    <span className="hours-days">{hour.days}</span>
-                    <span className="hours-time">{hour.time}</span>
+                    <span className="hours-days">{edu.content}</span>
+                    {/* <span className="hours-time">{hour.time}</span> */}
                   </li>
                 ))}
               </ul>

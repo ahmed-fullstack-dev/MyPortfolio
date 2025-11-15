@@ -185,9 +185,9 @@ const SelfDev = () => {
     <section id="selfdev" className="selfdev-section">
       <div className="container">
         <div className="section-header" data-aos="fade-up">
-          <h2 className="section-title">Self-developed project </h2>
+          <h2 className="section-title">My Other Projects </h2>
           <p className="section-subtitle">
-          Evaluations through my self-developed projects
+          Evaluations through my projects
           </p>
         </div>
         

@@ -13,7 +13,7 @@ const testimonials = [
   {
     id: 1,
     rating: 5,
-    text: "Grows fast, has strong potential, and works with solid fundamentals. He is a reliable ,impressive developer and quick learner.",
+    text: "Grows fast, has strong potential, and works with solid fundamentals. He is a passionate ,impressive developer and quick learner.",
     author: "C.Schepke",
     role: "Professor",
     image: "https://randomuser.me/api/portraits/men/55.jpg",
@@ -31,7 +31,7 @@ const testimonials = [
   {
     id: 3, 
     rating: 5,
-    text: "Solved complex problems with ease and communicated clearly throughout the project. Truly a reliable and talented full-stack developer.", 
+    text: "Solved complex problems with ease and communicated clearly throughout the project. Truly a passionate and talented full-stack developer.", 
     author: "D.Silveria",
     role: "Senior TA Manager",
     image: "https://randomuser.me/api/portraits/women/67.jpg",
