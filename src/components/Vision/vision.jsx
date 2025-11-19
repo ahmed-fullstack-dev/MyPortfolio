@@ -21,11 +21,11 @@ const Vision = () => {
     {
       id: 1,
       role: "Build top skills",
-      title: "Senior full stack developer",
+      title: "Top senior developer",
       year: "2028",
       type: "three",
       image: future_1,
-      description: "I want to be a senior full stack developer with a strong understanding of both frontend and backend development. I want to be able to build complex web applications from scratch and be able to deploy them to production.",
+      description: "I’m becoming a world-class full-stack developer and AI expert, building innovative products with global impact and inspiring future innovation.",
       featured: true,
       member: "1",
       hourly: "$40",
@@ -42,7 +42,7 @@ const Vision = () => {
       description: "I want to be a leader of a small team. I want to be able to lead a team of developers and be able to make decisions for the team.",
       featured: true,
       member: "3~5",
-      hourly: "$50",
+      hourly: "$",
       liked: false
     },
     {
@@ -56,7 +56,7 @@ const Vision = () => {
       description: "I want to be a successful entrepreneur. I want to be able to start my own company and be able to make decisions for the company.",
       featured: true,
       member: "6~10",
-      hourly: "$65",
+      hourly: "$",
       liked: false
     }
   ]);

@@ -67,7 +67,7 @@ const Header = ({ darkMode }) => {
               <GiGalaxy className="logo-icon" />
             </MotionDiv>
             <div className="logo-text-container">
-              <span className="logo-text">Full Stack Developer</span>
+              <span className="logo-text">Senior Full Stack Developer</span>
               <span className="logo-subtext">Ahmed Forneas</span>
             </div>
             <div className="logo-glow"></div>

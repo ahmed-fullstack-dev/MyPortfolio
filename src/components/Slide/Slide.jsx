@@ -27,7 +27,7 @@ const Slide = () => {
       image: slide_1,
       alt: 'Welcome to my portfolio',
       title: 'Welcome to my portfolio',
-      subtitle: 'I am a advanced full stack developer',
+      subtitle: 'I am a senior full stack developer',
       highlight: 'Full Stack Developer'
     },
     {

@@ -86,7 +86,7 @@ const Footer = () => {
   const educations = [
     { content: 'Bachelor of Computer Science' },
     { content:'Federal University of Pampa' },
-    { content: '03/2020 ~ 12/2023' }
+    { content: '03/2016 ~ 12/2019' }
   ];
 
   const legalLinks = [
