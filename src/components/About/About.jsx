@@ -31,11 +31,11 @@ const About = () => {
   ], []);
 
   const timeline = [
-    { year: "2020", event: "Beginner / Learning Foundations" },
-    { year: "2021", event: "Frontend Developer" },
-    { year: "2022", event: "Full-Stack Developer (Junior)" },
-    { year: "2023", event: "Full-Stack Developer (Mid-Level)" },
-    { year: "2025", event: "Full-Stack Developer (Advanced)" }
+    { year: "2019", event: "Frontend Developer" },
+    { year: "2021", event: "Full-Stack Developer" },
+    { year: "2022", event: "Full-Stack Developer (Mid-Level)" },
+    { year: "2023", event: "AI Developer" },
+    { year: "2024", event: "Full-Stack Developer (Senior)" }
   ];
 
   return (

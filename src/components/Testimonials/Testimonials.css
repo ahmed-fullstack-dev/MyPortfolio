@@ -96,6 +96,12 @@
   z-index: 1;
 }
 
+.testimonial-carousel .swiper-slide {
+  display: flex;
+  align-items: stretch;
+  height: auto;
+}
+
 .testimonial-card {
   background: rgba(30, 30, 30, 0.9);
   padding: 50px 40px;
@@ -110,6 +116,7 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .testimonial-card:hover {
