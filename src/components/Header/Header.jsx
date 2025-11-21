@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   FaHome, FaInfoCircle, 
-  FaStar, FaEnvelope,
+  FaStar, FaEnvelope, FaDownload,
   FaMoon, FaSun
 } from 'react-icons/fa';
 import { GiGalaxy } from 'react-icons/gi';
@@ -24,7 +24,8 @@ const Header = ({ darkMode }) => {
     { icon: <FaHome />, text: 'Home', href: '#', delay: 0.3 },
     { icon: <FaInfoCircle />, text: 'About', href: '#about', delay: 0.5 },
     { icon: <FaStar />, text: 'Reviews', href: '#reviews', delay: 0.7 },
-    { icon: <FaEnvelope />, text: 'Contact', href: '#contact', delay: 0.8 }
+    { icon: <FaEnvelope />, text: 'Contact', href: '#contact', delay: 0.8 },
+    { icon: <FaDownload />, text: 'Download', href: './src/assets/resume/Ahmed Forneas.pdf', delay: 0.9, download: true }
   ];
 
   return (
@@ -79,6 +80,9 @@ const Header = ({ darkMode }) => {
                 key={`nav-${index}`}
                 href={link.href}
                 className="nav-link"
+                download={link.download ? 'Ahmed Forneas.pdf' : undefined}
+                target={link.download ? '_blank' : undefined}
+                rel={link.download ? 'noopener noreferrer' : undefined}
                 onMouseEnter={() => setHoveredItem(index)}
                 onMouseLeave={() => setHoveredItem(null)}
                 initial={{ opacity: 0, y: -20 }}
